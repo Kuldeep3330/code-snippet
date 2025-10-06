@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Kuldeep3330/code-snippet#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "express": "^5.1.0",
+    "express-session": "^1.18.2",
     "nodemon": "^3.1.10"
   }
 }
