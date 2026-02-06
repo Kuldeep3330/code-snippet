@@ -69,24 +69,13 @@
 //   console.log(`Server running on http://localhost:${PORT}`)
 // );
 
-const http = require('http');
+import express from "express"
+const app=express()
+import cookieParser from "cookie-parser"
 
-const server= http.createServer((req, res)=>{
-  // res.writeHead(200, {"content-type":"text/plain"})
-  // res.setHeader('Content-Type', 'text/plain')
-  
-  if(req.url==="/"){
-    res.statusCode = 200;
-    res.end("Home Page")
-  }else if(req.url==="/about"){
-    res.statusCode = 200;
-    res.end("About Page")
-  }else{
-    res.statusCode = 404;
-    res.end("Page not found")
-  }  
-})
+app.use(cookieParser())
 
-server.listen(8080, ()=>{
+ 
+app.listen(8080, ()=>{
   console.log("Server is running on http://localhost:8080")
 })

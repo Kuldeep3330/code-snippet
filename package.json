@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "A simple code snippet project",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev": "nodemon -r dotenv/config index.js ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
